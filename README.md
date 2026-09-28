@@ -306,6 +306,12 @@ docker-compose exec -it web pip freeze > requirements.txt
 docker compose restart web
 
 
+--
+
+db export 
+
+
+docker compose exec db pg_dump -U postgresuser airbnb > airbnb_backup.sql
 
 
 
